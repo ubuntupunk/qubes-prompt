@@ -3,6 +3,26 @@
 *a summary of useful qubes commands*
 
 version: 3.3
+### Contents
+
+- [Mini Glossary](#mini-glossary)
+- [VM Management](#vm-management)
+- [Dom0](#dom0)
+- [DomU](#domu)
+- [DomU and Dom0](#domu-and-dom0)
+- [Files/Folders from and to Dom0](#filesfolders-from-and-to-dom0)
+- [Copy text between VM A and B](#copy-text-between-vm-a-and-b)
+- [Install Qubes Windows Tools (QWT)](#install-qubes-windows-tools-qwt)
+- [Troubleshoot](#troubleshoot)
+- [Grow disk](#grow-disk)
+- [Enlarge AppVMs TMPFS](#enlarge-appvms-tmpfs)
+- [Inter VM Networking](#inter-vm-networking)
+- [Templates](#templates)
+- [Create VM from VMware or VirtualBox images](#create-vm-from-vmware-or-virtualbox-images)
+- [Qubes OS Directories](#qubes-os-directories)
+- [Qubes OS Repositories](#qubes-os-repositories)
+- [Additional Troubleshooting](#additional-troubleshooting)
+- [Useful Links](#useful-links)
 
 ### Mini Glossary
 
@@ -710,3 +730,4 @@ Use the following instructions: [Archlinux Template](https://www.qubes-os.org/do
 [Qubes Forum Docs](https://forum.qubes-os.org/docs)
 
 [Qubes Salt Beginners Guide](https://forum.qubes-os.org/t/qubes-salt-beginners-guide/20126)
+

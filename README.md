@@ -1,8 +1,6 @@
 # Qubes OS Command Prompter | rofi / fzf launcher
 
-
 <a href="https://www.buymeacoffee.com/ubuntupunk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-i
 
 This project provides two helpers to access to **Qubes commands** and **shortcuts** via an **interactive manual** extracted from the official GnuQUBES manual. 40 commands are made available from the QUBES code-base in this way, allowing users to reference and learn the craft of QUBES. Using the helpers may assist those wanting to learn more about QUBES. This version is for posix-compliant systems that are able to install fzf/rofi, a seperate ulauncher extension is also available.
 
@@ -40,9 +38,7 @@ There are two versions to suit different user preferences:
 ### System requirements
 - Rofi
 - Fzf
-
 ### Recommended Installation
-
 ```python
 pip install qubes-prompt
 ```
@@ -51,7 +47,6 @@ pip install qubes-prompt
 ```bash
 sudo apt install rofi fzf
 ```
-
 ### Operation
 `qubes-fzf`  `# Uses fzf interface`
 

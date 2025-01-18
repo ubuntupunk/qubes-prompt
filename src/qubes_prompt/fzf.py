@@ -95,17 +95,17 @@ def open_qubes_command_url(selected_command):
     if len(parts) != 4:
         print("Invalid command format")
         return
-    description = parts[3]
-    print(f"description: {description}")  # Debug print
-
+    
+    # Extract the command name from the selected command
+    command_name = parts[0]
+    
     # Construct the path to the qubes.md file
     package_dir = os.path.dirname(os.path.abspath(__file__))
     qubes_md_path = os.path.join(package_dir, 'assets', 'qubes.md')
 
-    # Construct the URL to open the qubes.md file with the manual_description as a fragment
-    url = f"file://{qubes_md_path}#:{link}"
-    print(f"Opening URL: {description}")  # Debug print
-    #subprocess.run(['vim', f'{qubes_md_path}#:{description}'])
+    # Construct the URL using the command name
+    url = f"file://{qubes_md_path}#contents#{command_name.lower().replace(' ', '-')}"
+    print(f"Opening URL: {url}")  # Debug print
     subprocess.run(['xdg-open', url])
 
 def main():
