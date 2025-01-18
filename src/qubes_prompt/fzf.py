@@ -69,7 +69,7 @@ def format_commands_for_fzf(commands):
     """Format commands for fzf."""
     formatted_commands = []
     for command in commands:
-        formatted_commands.append(f"{command['name']} | {command['command']} | {command['options']} | {urllib.parse.unquote(command['description'])} ")
+        formatted_commands.append(command['command'])
     return formatted_commands
 
 def execute_fzf(commands):
@@ -108,14 +108,28 @@ def open_qubes_command_url(selected_command):
     print(f"Opening URL: {url}")  # Debug print
     subprocess.run(['xdg-open', url])
 
+import readline
+
 def main():
     qubes_commands = load_qubes_commands('commands.json')
     formatted_commands = format_commands_for_fzf(qubes_commands)
-    selected_command_fzf = execute_fzf(formatted_commands)
-    if selected_command_fzf:
-        open_qubes_command_url(selected_command_fzf)
-    else:
-        print("No command selected from fzf")
+
+    while True:
+        choice = input(f"{colorize('Select an option:', BLUE)}\n1. {colorize('Read Manual', GREEN)}\n2. {colorize('Enter Command', GREEN)}\n\nEnter your choice (1 or 2): ")
+        if choice == '1':
+            package_dir = os.path.dirname(os.path.abspath(__file__))
+            manual_path = os.path.join(package_dir, 'assets', 'qubes.md')
+            subprocess.run(['xdg-open', manual_path])
+            break
+        elif choice == '2':
+            selected_command_fzf = execute_fzf(formatted_commands)
+            if selected_command_fzf:
+                open_qubes_command_url(selected_command_fzf)
+            else:
+                print("No command selected from fzf")
+            break
+        else:
+            print(f"{colorize('Invalid choice. Please enter 1 or 2.', RED)}")
 
 if __name__ == "__main__":
     main()
