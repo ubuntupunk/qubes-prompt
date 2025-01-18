@@ -119,12 +119,12 @@ def main():
         if choice == '1':
             package_dir = os.path.dirname(os.path.abspath(__file__))
             manual_path = os.path.join(package_dir, 'assets', 'qubes.md')
-            subprocess.run(['xdg-open', manual_path])
+            webbrowser.open_new_tab(f"file://{manual_path}")
             break
         elif choice == '2':
             selected_command_fzf = execute_fzf(formatted_commands)
             if selected_command_fzf:
-                open_qubes_command_url(selected_command_fzf)
+                os.system(selected_command_fzf)
             else:
                 print("No command selected from fzf")
             break
