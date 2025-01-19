@@ -175,14 +175,15 @@
     "url": "contents#qvm-pci",
     "validation": false
   },
-    "name": "QVM USB", 
+  {
+    "name": "QVM USB",
     "command": "qvm-usb",
     "option": "list, attach <AppVM> <sys-usb:>",
     "description": "List and Attach USB devices",
-    "url": "contnts#qvm-usb",
+    "url": "contents#qvm-usb",
     "validation":"false"
   },
-   {
+  {
     "name": "Install Template",
     "command": "qubes-dom0-update qubes-template-*",
     "options": "<template name>",
