@@ -112,22 +112,6 @@
     "validation": false
   },
   {
-    "name": "Virtual Shell",
-    "command": "virsh",
-    "options": "-c xen:/// <command> [<vm-name>]",
-    "description": "Management user tool for libvirt (hypervisor abstraction)",
-    "url": "contents#virsh",
-    "validation": false
-  },
-  {
-    "name": "xl",
-    "command": "xl",
-    "options": "<subcommand> [<args>]",
-    "description": "Xen management tool, based on LibXenlight",
-    "url": "contents#xl",
-    "validation": false
-  },
-  {
     "name": "QVM Copy to VM",
     "command": "qvm-copy-to-vm",
     "options": "<vm-name> <file> [<file+>]",
@@ -152,7 +136,7 @@
     "validation": false
   },
   {
-    "name": "Grow Disk",
+    "name": "QVM Grow Disk",
     "command": "qvm-grow-private",
     "options": "<vm-name> <size>",
     "description": "Increase private storage capacity of specified VM*",
@@ -160,15 +144,7 @@
     "validation": false
   },
   {
-    "name": "Enlarge AppVMs TMPFS",
-    "command": "sudo mount -o remount,size=1024M /tmp",
-    "options": "",
-    "description": "Enlarge tmpfs to 1024Mb",
-    "url": "contents#enlarge-appvms-tmpfs",
-    "validation": false
-  },
-  {
-    "name": "List PCI",
+    "name": "QVM List PCI",
     "command": "qvm-pci",
     "options": "-l -a <domain-vm> <device>",
     "description": "List all attached devices",
@@ -184,35 +160,19 @@
     "validation": false
   },
   {
-    "name": "rpm",
-    "command": "rpm",
-    "options": "-qa *qubes-*",
-    "description": "List installed Qubes OS packages (Fedora)",
-    "url": "contents#rpm",
+    "name": "Enlarge AppVMs TMPFS",
+    "command": "sudo mount -o remount,size=1024M /tmp",
+    "options": "",
+    "description": "Enlarge tmpfs to 1024Mb",
+    "url": "contents#enlarge-appvms-tmpfs",
     "validation": false
   },
   {
-    "name": "cat",
-    "command": "cat",
-    "options": "/etc/qubes-release",
-    "description": "Prints Qubes release in human readable form",
-    "url": "contents#cat",
-    "validation": false
-  },
-  {
-    "name": "dnf",
-    "command": "dnf",
-    "options": "install <package-name>, search <package-or-word>, update",
-    "description": "Fedora package manager (install, search, update)",
-    "url": "contents#dnf",
-    "validation": false
-  },
-  {
-    "name": "yum",
-    "command": "yum",
-    "options": "install <package-name>, search <package-or-word>, update",
-    "description": "Fedora package manager (install, search, update)",
-    "url": "contents#yum",
+    "name": "Virtual Shell",
+    "command": "virsh",
+    "options": "-c xen:/// <command> [<vm-name>]",
+    "description": "Management user tool for libvirt (hypervisor abstraction)",
+    "url": "contents#virsh",
     "validation": false
   },
   {
@@ -232,6 +192,14 @@
     "validation": false
   },
   {
+    "name": "dnf",
+    "command": "dnf",
+    "options": "install <package-name>, search <package-or-word>, update",
+    "description": "Fedora package manager (install, search, update)",
+    "url": "contents#dnf",
+    "validation": false
+  },
+  {
     "name": "pacman",
     "command": "pacman",
     "options": "-S <package-name>, -Ss <package-or-word>, -Syyu",
@@ -240,7 +208,22 @@
     "validation": false
   },
   {
-    "name": "qemu-img",
+    "name": "rpm",
+    "command": "rpm",
+    "options": "-qa *qubes-*",
+    "description": "List installed Qubes OS packages (Fedora)",
+    "url": "contents#rpm",
+    "validation": false
+  },
+  {
+    "name": "yum",
+    "command": "yum",
+    "options": "install <package-name>, search <package-or-word>, update",
+    "description": "Fedora package manager (install, search, update)",
+    "url": "contents#yum",
+    "validation": false
+  },
+  {  "name": "qemu-img",
     "command": "qemu-img",
     "options": "convert <input-image> -O raw <output-image>",
     "description": "Convert disk images",
@@ -293,6 +276,14 @@
     "options": "-o remount,size=1024M /tmp",
     "description": "Remount tmpfs with increased size",
     "url": "contents#mount",
+    "validation": false
+  },
+  {
+    "name": "cat",
+    "command": "cat",
+    "options": "/etc/qubes-release",
+    "description": "Prints Qubes release in human readable form",
+    "url": "contents#cat",
     "validation": false
   },
   {
@@ -357,6 +348,14 @@
     "options": "",
     "description": "Display kernel ring buffer",
     "url": "contents#dmesg",
+    "validation": false
+  },
+  {
+    "name": "xl",
+    "command": "xl",
+    "options": "<subcommand> [<args>]",
+    "description": "Xen management tool, based on LibXenlight",
+    "url": "contents#xl",
     "validation": false
   },
   {

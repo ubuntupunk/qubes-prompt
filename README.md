@@ -2,7 +2,7 @@
 
 <a href="https://www.buymeacoffee.com/ubuntupunk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
-This project provides two helpers to access to **Qubes commands** and **shortcuts** via an **interactive manual** extracted from the official GnuQUBES manual. 40 commands are made available from the QUBES code-base in this way, allowing users to reference and learn the craft of QUBES. Using the helpers may assist those wanting to learn more about QUBES. This version is for posix-compliant systems that are able to install fzf/rofi, a seperate ulauncher extension is also available.
+This package provides two helpers to access **Qubes commands** and **shortcuts** via an **interactive manual** extracted from the official Qubes  manual. 40 commands are made available from the Qubes code-base in this way, allowing users to reference and learn the craft of Qubes. Using the helpers as a faster way to access commands may assist those wanting to learn more about Qubes. This version is for posix-compliant systems that are able to install fzf/rofi, a seperate ulauncher extension is also available.
 
 ## Versions
 
@@ -21,12 +21,12 @@ There are two versions to suit different user preferences:
 ## Features
 
 * Search for QUBES Commands either by their description or their Hotkey.
-* Hitting enter on a command will redirect to [Qubes Manual](qubes.md) on the same command.
+* Hitting enter on a command will redirect to [Qubes Manual](https://github.com/ubuntupunk/qubes-prompt/blob/main/src/qubes_prompt/db/commands.json) on the same command.
 
 ## Disclaimer
-* This project is not related to the GnuPG Project and does not make any claims about the Qubes software.
-* Since the Commands Database and its description fragments have not been fully tested and validated, they may not be functional, please report any issue here if any don't map the GnuPGP official manual.
-* If you have issues with GnuPG (QUBES) please report that via the official QUBES channels.
+* This project is not related to the Qubes Project and does not make any claims about the Qubes software.
+* Since the Commands Database and its description fragments have not been fully tested and validated, they may not be functional, please report any issue here if any don't map the Qubes official manual.
+* If you have issues with Qubes please report that via the official Qubes channels.
 
 ## Installation
 
@@ -52,5 +52,6 @@ sudo apt install rofi fzf
 
 `qubes-rofi`  `# Uses rofi interface`
 
+### License
 
-
+[MIT License](https://github.com/ubuntupunk/qubes-prompt/blob/main/LICENSE)
