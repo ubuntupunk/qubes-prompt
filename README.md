@@ -2,7 +2,7 @@
 
 <a href="https://www.buymeacoffee.com/ubuntupunk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
-This package provides two helpers to access **Qubes commands** and **shortcuts** via an **interactive manual** extracted from the official Qubes  manual. 40 commands are made available from the Qubes code-base in this way, allowing users to reference and learn the craft of Qubes. Using the helpers as a faster way to access commands may assist those wanting to learn more about Qubes. This version is for posix-compliant systems that are able to install fzf/rofi, a seperate ulauncher extension is also available.
+This package provides two helpers to access **Qubes commands** and **shortcuts** via an **interactive manual** extracted from the official Qubes  manual. Over 40 commands are made available from the Qubes code-base in this way, allowing users to reference and learn the craft of Qubes. Using the helpers as a faster way to access commands may assist those wanting to learn more about Qubes. This version is for posix-compliant systems that are able to install fzf/rofi, a seperate ulauncher extension is also available.
 
 ## Versions
 
