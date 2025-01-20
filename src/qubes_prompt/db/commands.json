@@ -114,7 +114,7 @@
   {
     "name": "QVM Copy to VM",
     "command": "qvm-copy-to-vm",
-    "options": "<vm-name> <file> [<file+>]",
+    "options": "vm-name> <file> [<file+>]",
     "description": "Copy file from one VM to another VM",
     "url": "contents#qvm-copy-to-vm",
     "validation": false
@@ -154,7 +154,7 @@
   {
     "name": "QVM USB",
     "command": "qvm-usb",
-    "option": "list, attach <AppVM> <sys-usb:>",
+    "options": "list, attach <AppVM> <sys-usb:>",
     "description": "List and Attach USB devices",
     "url": "contents#qvm-usb",
     "validation":"false"
